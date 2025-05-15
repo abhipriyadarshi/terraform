@@ -2,7 +2,7 @@ provider "aws"{
 region = "us-east-1"
 }
 
-resource "aws_instance" "One"{
+resource "aws_instance" "One" {
 count = 4
 ami = "ami-0e58b56aa4d64231b"
 instance_type = "t2.micro"
