@@ -3,7 +3,7 @@ region = "us-east-1"
 }
 
 resource "aws_instance" "One" {
-count = 4
+count = 3
 ami = "ami-0e58b56aa4d64231b"
 instance_type = "t2.medium"
 key_name = "my_amazon1"
@@ -15,5 +15,5 @@ Name = var.instance_name[count.index]
 }
 
 variable  "instance_name" {
-default = ["jenkins","app1","app2","monitoring"]
+default = ["app1","app2","monitoring"]
 }
